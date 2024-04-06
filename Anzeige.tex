@@ -1,0 +1,228 @@
+\documentclass[paper=a4,fontsize=12pt, oneside, numbers=noenddot]{scrbook}
+
+\usepackage{emptypage}
+
+
+\usepackage[T1]{fontenc}            
+\usepackage[latin1]{inputenc}
+
+\usepackage[ngerman]{babel}
+
+
+\usepackage[shortlabels]{enumitem}
+
+
+\usepackage[bottom=2.5cm]{geometry}
+\usepackage[babel,german=quotes]{csquotes} 
+
+\usepackage{microtype} % verbesserter Randausgleich
+\usepackage[automark]{scrlayer-scrpage}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em} 
+\linespread{1.5}
+
+\setcounter{tocdepth}{5}
+\setcounter{secnumdepth}{5}
+
+\usepackage{alnumsec}
+\surroundarabic[(][)]{}{.}
+\otherseparators{5}
+\alnumsecstyle{LRnldn}
+
+
+\usepackage{newtxtext,newtxmath}
+
+
+\usepackage[para]{footmisc}
+
+
+\usepackage{lastpage}
+
+\usepackage[backend=biber,style=verbose]{biblatex}
+\addbibresource{literatur.bib}
+
+\usepackage{refcount}
+\newcounter{rz}
+\newcommand{\Rz}{\addtocounter{rz}{1}\textbf{(R\arabic{rz})~}}
+\newcommand{\RzLabel}[1]{\refstepcounter{rz}\label{#1}\textbf{(R\arabic{rz})~}}
+
+\usepackage{url}
+\usepackage{pdfpages}
+
+\newcounter{AnlageNr}
+% Parameter 1: Bezeichnung Label
+% Parameter 2: Bezeichnung Bezeichnung des Anhangs
+% Parameter 3: Datei die beigefügt werden soll
+\newcommand{\addAnlage}[3]{
+	\addtocounter{AnlageNr}{1}
+	\chead{}
+	\ihead{Anlage \theAnlageNr: #2}
+	\addcontentsline{toc}{section}{Anlage \theAnlageNr: #2}
+	\label{#1}
+	\includepdf[pages=-, frame, scale=.75, pagecommand={~}]{#3}
+}
+
+
+\begin{document}
+	
+\clearpairofpagestyles % lösche Voreinstellungen des plain- und des headings-Stils
+\chead{\headmark} % linke Seite: aktuelle Kapitelüberschrift; rechte Seite: aktuellen Unterabschnittsüberschrift (inklusive Nummer)
+\cfoot*{\pagemark} % setze Seitenzahl in den mittigen Fuß; Stern bewirkt dies für plain- und headings-Stil
+	
+
+\pagenumbering{roman}
+\tableofcontents
+
+\chapter{Sachverhalt im Überblick}
+\Rz Der Anlage 1\footnote{siehe: Seite \pageref{EmailAnhangAnzeige}} kann klar entnommen werden, dass am 06. April 2021 vom E-Mail-Postfach whistleblowing4bksd.stabrecht@gmail.com eine E-Mail an bksd.stabrecht@bl.ch versendet wurde. Mit der Anlage 2\footnote{siehe:  Seite \pageref{EingangAnzeige}} kann als bewiesen gelten, dass diese E-Mail in der Rechtsabteilung der Bildungs- Kultur- und Sportdirektion (Kurz: BKSD) eingegangen ist und eine Prüfung der eingereichten aufsichtsrechtlichen Anzeige stattfinden soll.
+
+\Rz Aufgrund der Anlage 3\footnote{siehe:  Seite \pageref{NachfrageAnzeige}} in Kombination mit der Anlage 4\footnote{siehe:  Seite \pageref{AntwortNachfrageAnzeige}} ist weiter ersichtlich, dass eine Kommunikation z.B. für etwaige Rückfragen über das E-Mail-Postfach whistleblowing4bksd.stabrecht@gmail.com möglich ist. Interessant ist der rechtliche Hinweis auf die Bestimmung im § 43 Abs. 2 des Verwaltungsverfahrensgesetzes Basel-Landschaft [VwVG BL, SGS 175]. Danach gilt, dass die anzeigende Person zwar nicht die Rechte einer Partei hat, jedoch der anzeigenden Person obligatorisch Auskunft über die Erledigung ihrer Anzeige zu erteilen ist. Die Auskunft, sie geschieht  standardmässig in schriftlicher Form, erfolgt nicht in Form einer Verfügung\footnote{siehe: § 2 Abs. 1 u. 2 SGS 175}.
+
+\Rz Die obligatorische Auskunft\footnote{siehe: Seite \pageref{EntscheidAnzeige} ff.} über die Erledigung der eingereichten aufsichtsrechtlichen Anzeige erfolgte am 08. Juni 2021 über das E-Mail-Postfach whistleblowing4bksd.stabrecht@gmail.com durch den Generalsekretär der BKSD Herrn Severin Faller. In der Auskunft wird mir im Endeffekt mitgeteilt, dass zusammenfassend die BKSD keinen Grund für ein aufsichtsrechtliches Einschreiten gegen die Abteilung Sonderpädagogik des Amts für Volksschulen (kurz: AVS) oder den Schulpsychologischen Dienst (Kurz: SPD) sieht und daher der aufsichtsrechtlichen Anzeige vom 5. April 2021 keine Folge geleistet wird.
+
+\Rz In der erteilten Auskunft ist bemerkenswert, dass einem  explizit mitgeteilt wird, die Aufsichtsbehörde sei dem Anzeiger
+ gegenüber, im Gegensatz zum Rechtsmittel der Beschwerde, keine Rechenschaft und keine Begründung schuldig, dann aber gerade davon keinen Gebrauch zu machen. So werden u.a. diverse Texte aus der juristischen Fachliteratur sowie diverse Erwägungen aus Gerichtsbeschlüsse bemüht um den Entscheid bzgl. der vorliegenden aufsichtsrechtlichen Anzeige zu rechtfertigen.
+
+\chapter{Wesenszug der aufsichtsrechtlichen Anzeige}
+\Rz Nachfolgend greife ich den in diesem Dokument gemachten Vorwürfen vor. Dies geschieht jedoch nur, um dem Leser den Wesenszug einer aufsichtsrechtlichen Anzeige aufzeigen zu können. Grundsätzlich ist der folgenden Aussage, die im zweiten Absatzes der erteilten Auskunft getroffen wird, beizupflichten. Danach kann mit einer aufsichtsrechtlichen Anzeige jedermann formlos Tatsachen, die ein Einschreiten gegen eine Behörde erforderlich erscheinen lassen, bei der Aufsichtsbehörde anzeigen. Dies kann z.B. angezeigt sein, wenn eine von der Aufsichtsbehörde zu beaufsichtigten Behörde regelmässig gesetzwidrig handelt.
+
+\Rz Im zweiten Absatz der erteilten Auskunft kann nachgelesen werden, dass im genannten Bundesgerichtsentscheids\footcite[E. 2a]{BGE121I42} vom 18. Januar 1995 folgendes entnommen werden kann (Zitat) "<\textit{Die Einreichung einer aufsichtsrechtlichen Anzeige vermittelt keinen Anspruch auf deren materielle Prüfung und Erledigung}">. Und doch hält der Verfasser der erteilten Auskunft, Herr Severin Faller, richtigerweise im letzten Satz des zweiten Absatzes fest (Zitat) "<\textit{Die Aufsichtsbehörde ist jedoch, gestützt auf den Grundsatz der Gesetzmässigkeit, verpflichtet, einen ihr angezeigten Sachverhalt zu überprüfen, wenn eine Anzeige den Anschein erweckt, es sei gesetzwidrig gehandelt worden}">. Es ist hier jedoch anzumerken, dass sich im zweiten Absatz der erteilten Auskunft ein Redaktionsfehler eingeschlichen hat. Der folgende Satz (Zitat) "<\textit{Der Anzeiger hat keine Parteirechte wie zum Beispiel das Recht auf Begründung des Entscheids oder das Recht auf Akteneinsicht}"> ist im genannten Fachbuch\footcite{2008:Haeflin:AllgVerwaltungsrecht} nicht unter  Rz. 1835 sondern Rz. 1209 zu finden. In diesem Kontext verweise ich auf den Hinweis in Rz. 1202 im selbigen Fachbuchs (Zitat):
+\begin{addmargin}[2.5em]{0em}\emph{Die Institution der Aufsichtsbeschwerde hängt mit der Aufsichtskompetenz der mit der Beschwerde angegangenen Behörde zusammen. Die Aufsichtsbehörde ist für die Erfüllung ihrer Aufgaben darauf angewiesen, nicht nur durch die von Amtes wegen vorgenommenen Untersuchungen, sondern auch von Personen ausserhalb der Verwaltungsorganisation auf Fehler der Verwaltungsbehörden hingewiesen zu werden (vgl. BVGer, Urteil B-6014/2011 vom 6. Mai 2015 E. 4.2). Die Aufsichtsbeschwerde bedarf deshalb keiner gesetzlichen Grundlage.}
+\end{addmargin}
+\Rz Wer im Urteils B-6014/2011\footcite[E. 4.2]{BGE6014:20111} nachschlägt, wird vielleicht erstaunt sein, denn dort wird vom Bundesgericht im Kontext einer indirekt zu behandelnden aufsichtsrechtlichen Anzeige ausgeführt, dass Private das Recht haben, als Anzeigende einer Behörde Informationen und Hinweise zu geben, um diese zu bestimmten Massnahmen zu veranlassen. Die zuständige Behörde ist dabei von Amtes wegen verpflichtet, solche Anzeigen entgegen und zur Kenntnis zu nehmen, sie zu prüfen, sowie die allenfalls erforderlichen Schritte einzuleiten. 
+
+\Rz Nur bei genauer Betrachtung wird deutlich, dass sich das Bundesgericht in den beiden Entscheiden nicht widerspricht. Grundsätzlich, so das Bundesgericht, hat man zuerst die möglichen ordentlichen Rechtsmittel zum Aufzeigen eines nicht rechtsstaatlichen Handels zu verwenden hat bevor das formlose Mittel der aufsichtsrechtlichen Anzeige zum Tragen kommen sollte. Die aufsichtsrechtlichen Anzeige ist jedoch kein formloses Rechtsmittel, dass dazu dient nicht eingehaltene Fristen zu umgehen. Nur in einem solchen Fall vermittelt die Einreichung einer aufsichtsrechtlichen Anzeige keinen Anspruch auf deren materielle Prüfung und Erledigung. Sollten hingen für den Anzeigenden keine formellen Rechtsmittel vorhanden sein, so ist die zuständige Aufsichtsbehörde von Amtes wegen verpflichtet, solche aufsichtsrechtlichen Anzeigen zu prüfen sowie die allenfalls erforderlichen Schritte einzuleiten.
+
+\Rz Hinsichtlich des vorherigen Absatzes mache ich auf das  \textit{Einführungsgesetz zur Schweizerischen Strafprozessordnung} (EG StPO, SGS 250), namentlich den darin enthaltenen § 27 (Pflicht zur Anzeige (Art. 302 Abs. 2 StPO[23])), aufmerksam. Danach sind  die Mitglieder sowie Mitarbeiter der kantonalen und kommunalen Behörden in ihrem Zuständigkeitsbereich obligatorisch verpflichtet, konkrete Anzeichen, die auf eine strafbare Handlung oder deren Täterschaft hindeuten, der Staatsanwaltschaft mitzuteilen.  
+
+\Rz Die aufsichtsrechtlichen Anzeige soll auf Basis der formlos eingereichter externen Informationen die Aufsichtsbehörde bei der Erfüllung ihrer Aufgaben unterstützen. Die zuständige Aufsichtsbehörde ist dabei unter Umständen von Amtes wegen verpflichtet, solche Anzeigen zur Kenntnis zu nehmen, sie zu prüfen, sowie die allenfalls erforderlichen Schritte einzuleiten. Weiterhin ist sie verpflichtet, sollte sie die Möglichkeit dazu haben, der anzeigenden Person Auskunft über die Erledigung ihrer Anzeige zu erteilen. Im Kanton Basel-Landschaft ist die Aufsichtsbehörde aufgrund des \textit{Einführungsgesetz zur Schweizerischen Strafprozessordnung} zusätzlich dazu verpflichtet, konkrete Anzeichen, die auf eine strafbare Handlung oder deren Täterschaft hindeuten, der Staatsanwaltschaft mitzuteilen.\footnote{siehe: § 27 Abs. 1 SGS 250} Dies schliesst auch mögliches fehlbares Handeln innerhalb der Behörde ein. Nur bei Übertretungen im Sinne des Art. 104 StGB  dürfen die Behörden von einer Anzeige absehen, sofern das Verschulden der Täterschaft besonders gering ist und die Folgen der Tat unbedeutend sind.\footnote{siehe: § 27 Abs. 3 SGS 250}
+
+\Rz Fazit: Die kantonale aufsichtsrechtliche Anzeige, welche ein formloses Rechtsmittel darstellt, dient also der Aufrechterhaltung eines rechtsstaatlichen Handels innerhalb der kantonalen Behörden.  Die zuständige Aufsichtsbehörde ist in der Regel von Amtes wegen verpflichtet, solche aufsichtsrechtlichen Anzeigen zu prüfen sowie die allenfalls erforderlichen Schritte einzuleiten. Ein solcher Schritt kann eine entsprechende obligatorische Mitteilung an die kantonale Staatsanwaltschaft sein, sofern konkrete Anzeichen auf eine strafbare Handlung oder deren Täterschaft hindeuten.
+
+\chapter{Vorwurf: Falschbeurkundung im Amt (Herr Serverin Faller)}\pagenumbering{arabic} 
+
+\RzLabel{VorwurfFalschbeurkundungNr1} Der Generalsekretär des BKSD Herr Serverin Faller könnte sich aufgrund seiner schriftlichen Beantwortung\footnote{siehe: Anlage ab Seite \pageref{EntscheidAnzeige}} der aufsichtsrechtlichen Anzeige\footnote{siehe: Anlage ab Seite \pageref{EmailAnhangAnzeige}} und der darin enthaltenen Aussage (Zitat) "<\textit{Uns liegen zudem keine konkreten Hinweise vor, dass bzw. inwiefern die Abteilung Sonderpädagogik bzw. der SPD Betroffene falsch beraten haben sollen. Insofern können wir entsprechende Vorwürfe nicht näher prüfen.}"> einer \textit{Falschbeurkundung im Amt} nach Art. 317 Ziffer 1 Abs. 2 StGB strafbar gemacht haben.
+
+\section{Falschbeurkundung im Amt}
+\Rz Nach Art. 317 Ziffer 1 Abs. 2 StGB werden Beamte oder Personen öffentlichen Glaubens, die vorsätzlich eine rechtlich erhebliche Tatsache unrichtig beurkunden, namentlich eine falsche Unterschrift oder ein falsches Handzeichen oder eine unrichtige Abschrift beglaubigen, mit Freiheitsstrafe bis zu fünf Jahren oder Geldstrafe bestraft.
+
+\subsection{Auslegung des Begriffs: Vorsatz}
+\Rz Vorsätzlich begeht ein Verbrechen oder Vergehen, wer die Tat mit Wissen und Willen ausführt. Vorsätzlich handelt bereits, wer die Verwirklichung der Tat für möglich hält und in Kauf nimmt.
+
+\Rz Ob der Täter die Tatbestandsverwirklichung in Kauf genommen hat, muss das Gericht bei Fehlen eines Geständnisses des Beschuldigten aufgrund der konkreten Umstände entscheiden. Dazu gehören die Grösse des dem Täter bekannten Risikos der Tatbestandsverwirklichung, die Schwere der Sorgfaltspflichtverletzung, die Beweggründe des Täters und die Art der Tathandlung. Je grösser die Wahrscheinlichkeit der Tatbestandsverwirklichung ist und je schwerer die Sorgfaltspflichtverletzung wiegt, desto eher darf gefolgert werden, der Täter habe die Tatbestandsverwirklichung in Kauf genommen.\footcite[Erw. 2.2.1.1 d) - (Seite 67)]{KGE46018365}
+
+\subsection{Auslegung des Begriffs: Beamte}
+\Rz Gemäss Art 110 Ziffer 3 StGB gelten als Beamte die Beamten und Angestellten einer öffentlichen Verwaltung und der Rechtspflege sowie die Personen, die provisorisch ein Amt bekleiden oder provisorisch bei einer öffentlichen Verwaltung oder der Rechtspflege angestellt sind oder vorübergehend amtliche Funktionen ausüben. 
+
+\Rz Bei dieser Defintion ist zu beachten, dass auf Bundesebene mit Inkrafttreten des Bundespersonalgesetzes am 1. Januar 2002 die Wahl auf Amtsdauer durch eine kündbare öffentlich-rechtliche Anstellung ersetzt wurde. Mit der Rechtsfolge, dass seit dem auf Bundesebene im eigentlichen Sinne keine Beamte mehr gibt. Jedoch war der Wechsel des Beamten-Status in Angestellten-Status der Abschluss eines bereits zuvor stattgefundenen Wandels innerhalb der Bundesbehörden, bei dem immer vermehrter hoheitliche Aufgaben durch Personen mit öffentlich-rechtlicher Anstellung erfüllt wurden. In selbiger Entwicklung hat sich auch die Auslegung des Begriffs des Beamten geändert. Nach der geänderten Praxis gilt, entscheidend für die Beamtenstellung ist, ob die übertragene Funktion amtlicher Natur ist, das heisst, ob sie zur Erfüllung einer dem Gemeinwesen zustehenden öffentlich-rechtlichen Aufgabe übertragen wurde.\footcite[Erw. 1.3]{BGE141IV329} Das Bundesgericht hielt bereits früher fest, dass der strafrechtliche Beamtenbegriff sowohl institutionelle als auch funktionelle Beamte erfasst. Erstere sind die Beamten im öffentlich-rechtlichen Sinne sowie Angestellte im öffentlichen Dienst. Bei Letzteren ist es nicht von Bedeutung, in welcher Rechtsform diese für das Gemeinwesen tätig sind. Das Verhältnis kann öffentlich-rechtlich oder privatrechtlich sein. Entscheidend ist vielmehr die Funktion der Verrichtungen. Bestehen diese in der Erfüllung öffentlicher Aufgaben, so sind die Tätigkeiten amtlich und die sie verrichtenden Personen Beamte im Sinne des Strafrechts.\footcite{BGE135IV198}
+
+ 
+\subsection{Auslegung des Begriffs: Urkunde}
+\Rz Nach Art. 110 Ziffer 4 Satz 1 StGB sind Urkunden Schriften, die bestimmt und geeignet sind, oder Zeichen, die bestimmt sind, eine Tatsache von rechtlicher Bedeutung zu beweisen. Wobei  gemäss Art. 110 Ziffer 4 Satz 2 StGB die Aufzeichnung auf Bild- und Datenträgern der Schriftform gleichsteht, sofern sie demselben Zweck dient.
+
+\Rz Im Zuge des verstärkten Einzugs der E-Mail wurde vom Gesetzgeber der Begriff der Urkunde um die Eigenschaft des Vorliegens auf einem Datenträger ergänzt, denn eine E-Mail wird in erster Linie in digitaler Form auf Datenträgern gespeichert. Der Ausdruck einer E-Mail dient im Grunde nur der externen Aufbewahrung sowie dem Nachweis in Papierform. Gleiches gilt auch bei (behördlichen) Dokumenten, die auf Internetseite zur Verfügung gestellt werden, denn mit jedem per Browser getätigten Abruf dieser Dokumente wird eine digitale Version auf dem lokalen Datenträger des Webseiten-Besuchers erzeugt. 
+
+\subsection{Auslegung des Begriffs: rechtlich erhebliche Tatsache}
+\Rz Bleibt zu klären, was der Gesetzgeber hinsichtlich der Urkunde unter einer Tatsache von rechtlicher Bedeutung versteht. Rechtlich erheblich sind Tatsachen, welche allein oder in Verbindung mit andern Tatsachen die Entstehung, Veränderung, Aufhebung oder Feststellung eines Rechts bewirken. Rechtlich erheblich sind aber auch Indizien, die den Schluss auf erhebliche Tatsachen zulassen, und ebenso Hilfstatsachen, die für die Beurteilung des Werts oder der Beweiskraft eines Beweismittels von Bedeutung sind.\footcite[E. 3a]{BGE113IV77}
+
+
+\Rz Bei Strafnormen ist immer zu Fragen, welches rechtliche Gut geschützt werden soll. Im Falle des Art. 317 Ziffer 1 Abs. 2 StGB gibt es folgende Rechtsgüter, die geschützt werden sollen\footcite[Art. 317, Rz. 1]{2020:Wohlers:StGBHandkommentar}:
+
+\begin{itemize}[noitemsep]\setlength\itemsep{0.3em}
+	\item Das Rechtsgut des öffentlichen Vertrauens in den Urkundenbeweis.
+	\item Das Rechtsgut des öffentlichen Vertrauens an einer zuverlässigen Amtsführung
+\end{itemize} 
+
+
+\section{Erwägung}
+
+\Rz Damit die Beantwortung der aufsichtsrechtlichen Anzeige als Urkunde gewertet werden kann, muss die Antwort vom 08. Juni 2021 im konkreten Fall mindesten eine rechtlich erhebliche Tatsache enthalten. 
+
+\Rz Wie bereits auf Seite \pageref{VorwurfFalschbeurkundungNr1} im Abschnitt R\ref{VorwurfFalschbeurkundungNr1} aufgezeigt wurde, enthält die Beantwortung folgende Aussage (Zitat): "<\textit{Uns liegen zudem keine konkreten Hinweise vor, dass bzw. inwiefern die Abteilung Sonderpädagogik bzw. der SPD Betroffene falsch beraten haben sollen. Insofern können wir entsprechende Vorwürfe nicht näher prüfen}">.
+
+\Rz In der Begründung der "<\textit{Aufsichtsrechtliche Anzeige V}"> wird folgende Aussage getroffen (Zitat):
+\begin{addmargin}[2.5em]{0em}\emph{Wie bereits in der aufsichtsrechtlichen Anzeige III ausgearbeitet, kann man davon ausgehen, dass betroffene Eltern nicht aus eigenem Antrieb auf das Formular "<Antrag der Erziehungsberechtigten"> stossen werden. Aus diesem Grunde kann augenscheinlich davon ausgegangen werden, dass die Fachstellen (SPD) die Eltern fehlerhaft berät. Ob die juristisch fehlerhafte Beratung aufgrund oben angesprochener Dokumente im guten Glauben oder wider besseres Wissen geschieht mag dahingestellt sein.
+}\end{addmargin} 
+
+\Rz Bei einem Vergleich der eingereichten aufsichtsrechtlichen Anzeige mit der schriftlichen Antwort des Herrn Severin Faller fällt auf, dass in der Antwort die  Verordnung über den Schulpsychologischen Dienst (SGS 645.21), namentlich der §§ 2 Abs. 1 sowie 2 Abs. 4 SGS 645.21, nicht erwähnt wird. Weshalb ich auf die Differenz hinweise, wird deutlich, wenn man sich die Aussagen im §§ 2 Abs. 1 i.V.m. 2 Abs. 4 SGS 645.21 vergegenwärtigt. Danach \underline{berät} der Schulpsychologische Dienst und unterstützt Schülerinnen und Schüler sowie deren Erziehungsberechtigte in Fragen des Lernens, des Verhaltens und der Entwicklung. Er stellt seine Bemühungen in den Dienst positiver Schullaufbahnen und \underline{beantragt} mit Zustimmung der Inhaber der elterlichen Sorge bei den zuständigen Behörden die notwendigen Massnahmen. Die Verordnung über den Schulpsychologischen Dienst (SGS 645.21) wurde übrigens von der obersten Verwaltungsbehörde, dem Regierungsrat, erlassen. Die in der aufsichtsrechtlichen Anzeige verwendete Wortwahl "<\textit{beraten}"> ist somit im Zusammenhang des § 2 Abs. 1 SGS 645.21 zu betrachten.
+
+
+\RzLabel{Beantragung4Zustimmung} Womit ich auf die entscheidende Aussage im neunten Abschnitt der Antwort zur aufsichtsrechtlichen Anzeige zu sprechen komme. In seiner Aussage schreibt Herrn Severin Faller sehr deutlich, dass die Erziehungsberechtigten via den SPD oder die KJP darüber informiert werden, dass ohne Vorliegen eines Antrags der Erziehungsberechtigten -- im Sinne einer Einverständniserklärung nach § 45 Abs. 2 des Bildungsgesetzes -- die Abteilung Sonderpädagogik den Antrag von SPD oder KJP nicht prüfen kann. Gleichzeitig wird ihnen das entsprechende Antragsformular ausgehändigt oder sie werden auf die Onlineversion verwiesen. Es sollte eigentlich Herrn Severin Faller aus seinen eigenen Lebenserfahrungen bekannt sein, dass nach allgemeinen Verständnis eine Zustimmung grundsätzlich ein formloses Handeln ist und nur in wenigen Fällen sinnvollerweise in schriftlicher Form erfolgt. 
+
+
+
+\RzLabel{ZwischenfazitSF1} \textit{\textbf{Zwischenfazit:}} Herr Severin Faller bestätigt eindeutig, dass es Fälle gibt, bei denen der Schulpsychologische Dienst die Eltern dahin informiert, dass diese explizit eine Beantragung der ihnen empfohlenen spezielle Förderung an Privatschulen durchführen müssen, solltet sie eine Umsetzung der ihnen empfohlenen spezielle Förderung an Privatschulen wollen. Die von Herrn Severin Faller aufgezeigte Aushändigung des Antragsformulars durch den Schulpsychologischen Dienst (SPD) an die Erziehungsberechtigten kann somit von diesen nur in eine Richtung verstanden werden. Es bedarf ihrer aktiven Beantragung solltet sie die Umsetzung der ihnen empfohlenen spezielle Förderung an Privatschulen wahrnehmen wollen. 
+
+
+\RzLabel{ZwischenfazitSF2} \textit{\textbf{Zwischenfazit:}} Es sollte Herrn Severin Faller bekannt sein, dass es dem allgemein gültigen Verständnis wie eine Zustimmung erfolgt. Grundsätzlich ist eine Zustimmung ein formloses Handeln, dass aber zur Nachweisbarkeit sinnvollerweise in schriftlicher Form eingefordert werden sollte. 
+
+\RzLabel{AntragSPD4AVS} Aus dem achten Abschnitt der Antwort erfährt man von Herrn Severin Faller, dass (damals) gemäss§ 46 Abs. 1 des kantonalen Bildungsgesetzes die BKSD ein Angebot der speziellen Förderung einer Privatschule übertragen kann. Vorrang haben Massnahmen der speziellen Förderung innerhalb der öffentlichen Schulen des Kantons und der Einwohnergemeinden. Weiter erfährt man, dass nach § 46 Abs. 2 des Bildungsgesetzes die BKSD die Bewilligung zur Aufnahme einer speziellen Förderung an einer Privatschule auf Antrag einer vom Kanton bestimmten Fachstelle erteilt. Zusätzlich erfährt man, dass sich Kantonsgericht in diversen Entscheiden, so namentlich beim Entscheid vom 21. August 2019\footcite[Erw. 4.3.4]{KGE81018328}, mit der Frage der Bewilligung einer speziellen Förderung an Privatschulen befassen musste. Anhand der Auflistungen wird deutlich, dass Herr Severin Faller den namentlich aufgeführten Entscheid gelesen haben muss, denn seine Auflistung entspricht der Auflistung im Entscheid des Kantonsgerichts. Ob Herr Severin Faller die von ihm genannten Quelle konsultiert hat oder nicht, kann jedoch aus seiner Antwort nicht stichhaltig nachgewiesen werden. Es kann an der Stelle jedoch bereits festgestellt werden, dass bereits beim Entscheid vom 21. August 2019 an keiner Stelle davon die Rede ist, dass die Erziehungsberechtigten einen Antrag bzgl. der Bewilligung einer speziellen Förderung an Privatschulen zu stellen hätten. Vielmehr wird immer wieder betont, dass gemäss § 46 Abs. 2 Bildungsgesetz für eine Bewilligung ein Antrag einer vom Kanton bestimmten Fachstelle vorliegen muss.
+
+\RzLabel{ZwischenfazitSF2} \textit{\textbf{Zwischenfazit:}} Herr Severin Faller zeigt in seinen Ausführungen unmissverständlich auf, dass gemäss § 46 Abs. 2 Bildungsgesetz für eine Bewilligung ein Antrag einer vom Kanton bestimmten Fachstelle vorliegen muss. Herr Severin Faller hat sich somit nachweisbar mit der sich aus dem Bildungsgesetz ergebenen rechtlichen Situation bzgl. der Bewilligung einer speziellen Förderung an Privatschulen auseinandergesetzt. Dies wird zusätzlich anhand der diversen von ihm aufgeführten Quellen sehr deutlich.  Er hat also, was die rechtliche Abklärung der Bestimmungen bzgl. des § 46 Bildungsgesetz betrifft, die Vorsicht beachtet, zu der er nach den Umständen und nach seinen persönlichen Verhältnissen verpflichtet ist. 
+
+\Rz Weiter sollte Herrn Severin Faller bekannt sein, dass eine eigene Zustimmung nicht beantragt werden muss. Dies widerspricht auch dem allgemein gültigen Verständnis wie eine Zustimmung erfolgt. Grundsätzlich ist eine Zustimmung ein formloses Handeln, dass aber zur Nachweisbarkeit sinnvollerweise in schriftlicher Form eingefordert werden sollte. 
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\RzLabel{WebseiteBekannt} Schaut man sich die aufsichtsrechtlich Anzeige genauer an, so wird deutlich, dass diese konkret nur Webadressen bzgl. kantonaler Gesetze und Verordnungen enthält. Was die Webadresse bzgl. des online verfügbaren Antragsformulars betrifft, wird in der aufsichtsrechtlichen Anzeige im Abschnitt \textit{Die fachliche Ausgangslage} folgendes geschrieben (Zitat):
+\begin{addmargin}[2.5em]{0em}\emph{Auf einer der offiziellen Webseiten der Kantons Basellandschaft bietet die Abteilung für	Sonderpädagogik verschiedene Dokumente zum Thema Spezielle Förderung an einer Privatschule nach § 46 des Bildungsgesetzes\textsuperscript{(vii)} frei zugänglich zum Herunterladen an. Bei den Dokumenten handelt es sich einmal um einen grafisch aufbereiteten Ablauf, der sich aus dem § 46 des Bildungsgesetzes\textsuperscript{(vii)} ergeben soll. Der veröffentlichte Ablauf wird zusätzlich durch einige flankierende Formulare, welche ebenfalls frei zugänglich zum Herunterladen angeboten werden, ergänzt.}
+\end{addmargin}
+Es erfolgt also eindeutig keine konkrete Nennung der Webadressen bzgl. des online abrufbaren Antragsformulars. Desto erstaunlicher ist die folgende Aussage des Herrn Severin Faller (Zitat):
+
+\begin{addmargin}[2.5em]{0em}\emph{Entsprechende Onlinezugänge und weiterführende Onlineinformationen sind übersichtlich und umfassend abrufbar über die Homepage der Abteilung Sonderpädagogik (siehe: https://www.baselland.ch/politik-und-behorden/direktionen/bildungs-kultur-und-sportdirektion/bildung/integration-foerderung-sonderschulung) [\dots]).
+}\end{addmargin}
+Herrn Severin Faller ist also bewusst, von welcher konkreten Webseite in der aufsichtsrechtlichen Anzeige gesprochen wird.
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+
+\RzLabel{InhaltAntrag} Was ein solcher Antrag der vom Kanton bestimmten Fachstelle zu beinhaltet hat, wird ausführlich im Fachbuch\footcite[Seite 49]{2007:Biaggini:StaatsVerwaltungsrechBL} erörtert, welches im achten Abschnitt der Antwort sowie in den diversen Entscheiden des Kantonsgerichts als Referenz genannt wird. Der besseren Nachvollziehbarkeit ist diesem Schreiben der entsprechende neun Seiten umfassende Auszug zum Thema der Speziellen Förderung im Anhang ab Seite \pageref{AuszugVerwaltungsrechtII} beigefügt. 
+
+
+Erst einmal ist anzumerken, auch aus dem beigelegten neun Seiten umfassende Auszug wird deutlich, ob die BKSD eine (rechtsstaatliche) Bewilligung der speziellen Förderung an Privatschulen erteilt werden darf, ist vom Vorliegen des Antrags einer vom Kanton bestimmten Fachstelle abhängig. Bevor die vom Kanton bestimmte Fachstelle den entsprechenden Antrag stellt, hat diese Fachstelle bei seiner durchgeführten Abklärung die Erforderlichkeit der speziellen Förderung an Privatschulen festzustellen. Die Beantwortung dieser Frage ist von hoher Technizität geprägt und daher von der abklärenden Fachstelle zu beurteilen. Mit der Beantragung der speziellen Förderung an Privatschulen hat die Fachstelle daher der BKSD explizit aufzuzeigen, weshalb die bestehenden Förderungsmöglichkeiten an der öffentlichen Schule im konkreten Fall nicht ausreichend sind. Womit zwei Dinge deutlich werden. Ersten wird deutlich, dass ein ausschliessliches Aufzeigen der als notwendig erachtenden Förderungen für eine Bewilligung der speziellen Förderung an Privatschulen gerade nicht ausreichend sind. Zweitens sollte nun deutlich sein, dass die Erziehungsberechtigten (in der Regel) nicht in der Lage sind, ihren eingereichten Antrag mit der notwendigen Begründung zu versehen.
+
+\RzLabel{arg1} Zwischenfazit: Herr Severin Faller hat sich nachweisbar mit der aus dem Bildungsgesetz ergebenen rechtlichen Situation bzgl. der Bewilligung einer speziellen Förderung an Privatschulen beschäftigt. Ihm ist bekannt, dass die Bewilligung der speziellen Förderung
+
+
+\Rz Die rechtliche Tragweite einer von den Erziehungsberechtigten eingereichten Beantragung wird übrigens im letzten Absatz der Seite 49 des beigelegten Fachbuchauszuges deutlich. In dem genannten Absatz wird erörtert wie in der Praxis etwa Fälle zu beurteilen sind, in denen Erziehungsberechtigte ihr Kind ohne vorherige Abklärung in eine Privatschule anmelden und erst nachträglich ein Gesuch um Bewilligung dieses Schulbesuchs stellen. Der Autor der Abhandlung über das Bildungsgesetz führt dazu folgendes aus (Zitat) "<\textit{Der Wortlaut des Gesetzes spricht klar von der Bewilligung zur Aufnahme einer Speziellen Förderung. Dies lässt grundsätzlich darauf schliessen, dass die (mit Kostenfolge für den Regelschulträger verbundene) Aufnahme der Speziellen Förderung an der Privatschule erst nach Vorliegen eines entsprechenden Antrags und nach Erteilung der Bewilligung durch die BKSD erfolgen kann.}">. Das Vorliegen eines Antrags der Eltern ist nicht von rechtlicher Bedeutung. Der Klarheit wegen ist anzumerken, dass unter Berücksichtigung der in der Abhandlung zuvor getätigten Aussagen es sich beim im zitierte Satz aufgeführten "<\textit{entsprechenden Antrag}"> nur um den Antrag der Fachstelle und gerade nicht der Antrag der Erziehungsberechtigte handeln kann.
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+\Rz Womit ich auf die entscheidende Aussage im neunten Abschnitt der Antwort zur aufsichtsrechtlichen Anzeige zu sprechen komme. Danach wird quasi laut dem Herrn Severin Faller folgendes Prozedere bzgl. einer Bewilligung der speziellen Förderung an Privatschulen gelebt: Die Erziehungsberechtigten werden via den SPD oder die KJP darüber informiert, dass ohne Vorliegen eines Antrags der Erziehungsberechtigten -- im Sinne einer Einverständniserklärung nach § 45 Abs. 2 des Bildungsgesetzes -- die Abteilung Sonderpädagogik den Antrag von SPD oder KJP nicht prüfen kann. Gleichzeitig wird ihnen das entsprechende Antragsformular ausgehändigt oder sie werden auf die Onlineversion verwiesen. 
+
+
+\Rz Herrn Severin Faller hat übrigens ebenfalls selber in seiner Antwort aufgezeigt, dass den Erziehungsberechtigten entweder das Antragsformular ausgehändigt wird oder sie auf dessen Onlineversion verwiesen werden. Die Aushändigung eines Antragsformulars kann somit von diesen nur in eine Richtung verstanden werden. Solltet sie die Umsetzung der ihnen empfohlenen spezielle Förderung an Privatschulen wahrnehmen wollen, so müssten sie diese Förderung mittels des ausgehändigten Formulars beantragen. Im Zusammenhang der Onlineversion weist Herrn Severin Faller unter Nennung der Webadressen darauf hin, dass entsprechende Onlinezugänge und weiterführende Onlineinformationen übersichtlich und umfassend über die Homepage der Abteilung Sonderpädagogik abrufbar sind.
+
+
+\Rz Zwischenfazit: Es muss davon ausgegangen werden, dass dem Herrn Severin Faller bei der Beantwortung der aufsichtrechtlichen Anzeige der genaue Wortlaut des § 46 Abs. 2 Bildungsgesetzes bekannt war. Weiter kann aus den ganzen von ihm angeführten Referenzen geschlossen werden, dass er sich mit der rechtlichen Thematik der speziellen Förderung an Privatschulen eingehend auseinandergesetzt hat. 
+
+
+\chapter{Literaturverzeichnis}
+\printbibliography[heading=none]
+
+\chapter{Anlagen}\clearpage
+\chead{}\cfoot*{-\pagemark-}
+
+
+\addAnlage{EmailAnhangAnzeige}{Demoanlagen}{Anlagen/GmailNr1.pdf}
+\addAnlage{EingangAnzeige}{Eingangsbestätigung der aufsichtsrechtliche Anzeigen}{Anlagen/GmailNr2.pdf}
+\addAnlage{AnhangAnzeige}{Aufsichtsrechtliche Anzeigen}{Anlagen/AufsichtsrechtlicheAnzeigen_20120405.pdf}
+
+\addAnlage{NachfrageAnzeige}{Nachfrage bzgl. der aufsichtsrechtliche Anzeigen}{Anlagen/GmailNr3.pdf}
+\addAnlage{AntwortNachfrageAnzeige}{Beantwortung der Nachfrage}{Anlagen/GmailNr4.pdf}
+
+
+\addAnlage{EntscheidAnzeige}{Entscheid aufsichtsrechtliche Anzeigen}{Anlagen/GmailNr5.pdf}
+
+
+\addAnlage{AuszugVerwaltungsrechtII}{Staats- und Verwaltungsrecht des Kantons BL III (Auszug)}{Anlagen/AuszugVerwaltungsrechtIII.pdf}
+
+
+
+
+
+
+\end{document}
