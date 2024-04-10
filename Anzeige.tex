@@ -47,8 +47,14 @@
 
 \usepackage{refcount}
 \newcounter{rz}
-\newcommand{\Rz}{\addtocounter{rz}{1}\textbf{(R\arabic{rz})~}}
-\newcommand{\RzLabel}[1]{\refstepcounter{rz}\label{#1}\textbf{(R\arabic{rz})~}}
+
+\newcommand{\Rz}{
+	\addtocounter{rz}{1}\textbf{(R\arabic{rz})~}
+}
+
+\newcommand{\RzLabel}[1]{
+	\refstepcounter{rz}\label{#1}\textbf{(R\arabic{rz})~}
+}
 
 \usepackage{url}
 \usepackage{pdfpages}
@@ -58,22 +64,19 @@
 % Parameter 2: Bezeichnung Bezeichnung des Anhangs
 % Parameter 3: Datei die beigefügt werden soll
 \newcommand{\addAnlage}[3]{
-\addtocounter{AnlageNr}{1}
-\chead{}
-\ihead{Anlage \theAnlageNr: #2}
-\section{Anlage \theAnlageNr: #2}
-\clearpage
-\addtocounter{page}{-1}
-%\addcontentsline{toc}{section}{}
-\label{#1}
-\includepdf[pages=-, frame, scale=.75, pagecommand={~}]{#3}
+	\addtocounter{AnlageNr}{1}
+	\chead{}
+	\ihead{Anlage \theAnlageNr: #2}
+	\section{Anlage \theAnlageNr: #2}
+	\clearpage
+	\addtocounter{page}{-1}
+	%\addcontentsline{toc}{section}{}
+	\label{#1}
+	\includepdf[pages=-, frame, scale=.75, pagecommand={~}]{#3}
 }
 
 
 \begin{document}
-
-
-
 \clearpairofpagestyles % lösche Voreinstellungen des plain- und des headings-Stils
 \chead{\headmark} % linke Seite: aktuelle Kapitelüberschrift; rechte Seite: aktuellen Unterabschnittsüberschrift (inklusive Nummer)
 \cfoot*{\pagemark} % setze Seitenzahl in den mittigen Fuß; Stern bewirkt dies für plain- und headings-Stil
