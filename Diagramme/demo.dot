@@ -1,60 +1,60 @@
 digraph Beziehungen {
-   nodesep=0.7
+nodesep=0.7
 
 
-  /* 14. November 2012 */
-   /* -- Note Beginn */ 
-   /* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
-   /* Die Zuständigkeit des SPD zum Erlass der angefochtenen Verfügung ergebe sich aufgrund des gesetzlichen Auftrags, */
-   /* wonach der SPD zu überprüfen habe, ob im konkreten Fall ein Anspruch auf spezielle Förderung an einer Privat- */ 
-   /* schule bestehe sowie aufgrund des Umstandes, dass das AVS ohne positiven Antrag des SPD  oder des KJPD keine  */
-   /* Bewilligung aussprechen könne. */
-   /* -- Note Ende */ 
-   "KGE 810 12 31" -> "KGE 810 08 162"  [label="E. 3.4"]   /* in E. 3.4.2 */
-   
-   /* 13. November 2013 */ 
-   "KGE 810 13 196"
+/* 14. November 2012 */
+/* -- Note Beginn */ 
+/* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
+/* Die Zuständigkeit des SPD zum Erlass der angefochtenen Verfügung ergebe sich aufgrund des gesetzlichen Auftrags, */
+/* wonach der SPD zu überprüfen habe, ob im konkreten Fall ein Anspruch auf spezielle Förderung an einer Privat- */ 
+/* schule bestehe sowie aufgrund des Umstandes, dass das AVS ohne positiven Antrag des SPD  oder des KJPD keine  */
+/* Bewilligung aussprechen könne. */
+/* -- Note Ende */ 
+"KGE 810 12 31" -> "KGE 810 08 162"  [label="E. 3.4"]   /* in E. 3.4.2 */
 
-   /* 08. Januar 2014*/
-   /* -- Note Beginn */ 
-   /* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
-   /* Legal-Definition von Behindert(er) */
-   /* -- Note Ende */ 
-   "KGE 810 13 241" -> "KGE 810 12 329" [label="E. 6"] /* in E. 8.3 */
+/* 13. November 2013 */ 
+"KGE 810 13 196"
 
-   /* 07. Mai 2014 */ 
-   "KGE 810 13 342" -> "KGE 810 13 241" [label="E. 4"] /* in E. 5.0 */
- 
-   /* 19. März 2014 */
-   /* -- Note Beginn */ 
-   /* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
-   /* Es wird von keiner Stelle bestritten, dass die öffentliche Schule nicht geeignet ist %/
-   /* Jedoch gibt es anscheined nur eine Empfehlung des SPD */
-   /* -- Note Ende */ 
-   "KGE 810 13 311" -> "KGE 810 13 196" [label="E. 7.3"] /* in E. 5.4 */
-   "KGE 810 13 311" -> "KGE 810 12 253" [label="E. 6.3"] /* in E. 7.1 */
-   "KGE 810 13 311" -> "KGE 810 13 241" [label="E. 7.3"] /* in E. 7.2 */
-   "KGE 810 13 311" -> "KGE 810 13 196" [label="E. 5.1"] /* in E. 7.3 */
-   "KGE 810 13 311" -> "KGE 810 12 329" [label="E. 7.4.1"] /* in E. 7.3 */
+/* 08. Januar 2014*/
+/* -- Note Beginn */ 
+/* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
+/* Legal-Definition von Behindert(er) */
+/* -- Note Ende */ 
+"KGE 810 13 241" -> "KGE 810 12 329" [label="E. 6"] /* in E. 8.3 */
 
-   /* 17. Mai 2017 */
-   "KGE 810 16 266" -> "KGE 810 13 342" [label="E. 4"]
-   "KGE 810 16 266" -> "KGE 810 13 241" [label="E. 4"]
-   "KGE 810 16 266" -> "KGE 810 13 342" [label="E. 5.2"]
-   "KGE 810 16 266" -> "KGE 810 04 98" [label="E. 2.c"]
-   "KGE 810 16 266" -> "KGE 810 13 311" [label="E. 7.1"]
-   "KGE 810 16 266" -> "KGE 810 13 311" [label="E. 7.2"]
-   "KGE 810 16 266" -> "KGE 810 13 241" [label="E. 7.3"]
+/* 07. Mai 2014 */ 
+"KGE 810 13 342" -> "KGE 810 13 241" [label="E. 4"] /* in E. 5.0 */
+
+/* 19. März 2014 */
+/* -- Note Beginn */ 
+/* !! Erwägung 3.2 betreffend aufsichtrechtlicher Anzeige */
+/* Es wird von keiner Stelle bestritten, dass die öffentliche Schule nicht geeignet ist %/
+/* Jedoch gibt es anscheined nur eine Empfehlung des SPD */
+/* -- Note Ende */ 
+"KGE 810 13 311" -> "KGE 810 13 196" [label="E. 7.3"] /* in E. 5.4 */
+"KGE 810 13 311" -> "KGE 810 12 253" [label="E. 6.3"] /* in E. 7.1 */
+"KGE 810 13 311" -> "KGE 810 13 241" [label="E. 7.3"] /* in E. 7.2 */
+"KGE 810 13 311" -> "KGE 810 13 196" [label="E. 5.1"] /* in E. 7.3 */
+"KGE 810 13 311" -> "KGE 810 12 329" [label="E. 7.4.1"] /* in E. 7.3 */
+
+/* 17. Mai 2017 */
+"KGE 810 16 266" -> "KGE 810 13 342" [label="E. 4"]
+"KGE 810 16 266" -> "KGE 810 13 241" [label="E. 4"]
+"KGE 810 16 266" -> "KGE 810 13 342" [label="E. 5.2"]
+"KGE 810 16 266" -> "KGE 810 04 98" [label="E. 2.c"]
+"KGE 810 16 266" -> "KGE 810 13 311" [label="E. 7.1"]
+"KGE 810 16 266" -> "KGE 810 13 311" [label="E. 7.2"]
+"KGE 810 16 266" -> "KGE 810 13 241" [label="E. 7.3"]
 
 
-   /* 25. Oktober 2017 */
-   "KGE 810 17 166" 
+/* 25. Oktober 2017 */
+"KGE 810 17 166" 
 
-   "KGE 810 14 299" -> "KGE 810 13 241" [label="E. 4"]
-   "KGE 810 14 299" -> "KGE 810 13 342" [label="E. ??"]
-   "KGE 810 14 299" -> "KGE 810 13 196" [label="E. 5.1"]
-   "KGE 810 14 299" -> "KGE 810 12 329" [label="E. 7.4.1"]
+"KGE 810 14 299" -> "KGE 810 13 241" [label="E. 4"]
+"KGE 810 14 299" -> "KGE 810 13 342" [label="E. ??"]
+"KGE 810 14 299" -> "KGE 810 13 196" [label="E. 5.1"]
+"KGE 810 14 299" -> "KGE 810 12 329" [label="E. 7.4.1"]
 
-   "KGE 810 14 391"
+"KGE 810 14 391"
 
 }
